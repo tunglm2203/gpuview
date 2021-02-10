@@ -88,7 +88,7 @@ def all_gpustats():
     for url in hosts:
         try:
             raw_resp = urlopen(url + '/gpustat')
-            gpustat = json.loads(raw_resp.read())
+            gpustat = json.loads(raw_resp.read().decode('utf-8'))
             raw_resp.close()
             if not gpustat or 'gpus' not in gpustat:
                 continue
