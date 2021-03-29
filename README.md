@@ -112,7 +112,7 @@ $ gpuview add --url <ip:port> --name <name>
 
 Remove a registered host as follows:
 ```
-$ gpuview remove --url <ip:port> --name <name>
+$ gpuview remove --url <ip:port>
 ```
 
 Display all registered hosts as follows:
